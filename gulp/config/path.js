@@ -29,7 +29,7 @@ export const path = {
     watch:{
         html:`${srcFolder}/**/*.pug`,
         style:`${srcFolder}/**/*.scss`,
-        images: `${srcFolder}/images/**/*.{jpg,png,jpeg gif, webp}`,
+        images: `${srcFolder}/images/*.{jpg,png,jpeg gif, webp}`,
         js:`${srcFolder}/script/**/*.js`
     },
     clean: buildFolder,

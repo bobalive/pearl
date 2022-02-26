@@ -5,7 +5,12 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Document
+        link(rel="stylesheet", href="style/fonts.min.css")
         link(rel="stylesheet", href="style/style.min.css")
-        
     body 
+        include view/header.pug
+        include view/main.pug
+        include view/footer.pug
+
+
         script(src="script/app.min.js") 

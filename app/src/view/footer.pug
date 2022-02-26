@@ -1,0 +1,51 @@
+footer.footer
+    .footer__top
+        .footer__forms
+            form(action="").footer__form
+                -var list = ['Date','How many people' ,'Your name' ,] 
+                each item in list 
+                    input(type="text" placeholder= item ).footer__form-input
+                p.footer__form-about Monday - Sunday ; 09:00 - 02:00
+            form(action="").footer__form
+                -var list = [ 'Time'  ,'Special wishes' , 'Your phone'] 
+                each item in list 
+                    input(type="text" placeholder= item ).footer__form-input
+                
+                a.main__about-link(href="") RESERVATION
+
+        
+        
+        
+
+        .footer__about 
+            h3.footer__about-title RESERVE A TABLE
+            p.footer__about-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt a at amet vulputate libero nisi, enim. Mi consequat duis ac malesuada et phasellus sit. Luctus aliquam bibendum semper adipiscing. Tristique tristique semper vestibulum nisi senectus dictum ultricies sodales sagittis.
+            
+            p.footer__about-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt a at amet vulputate libero nisi, enim. Mi consequat duis ac malesuada et phasellus sit.
+    .footer__bottom 
+        .footer__bottom-left
+            .footer__bottom-logo 
+                a.header__menu-logo(href="")
+                    img(src="images/images/headerbg.webp", alt="")
+                h2.header__menu-title LA PERLE
+                h5.header__menu-minititle French gourmet
+            .footer__bottom-icons 
+                a.header__menu-site(href="")
+                    img(src="images/images/facebook.webp", alt="")
+                a.header__menu-site(href="")
+                    img(src="images/images/instagram.webp", alt="")
+                a.header__menu-site(href="")
+                    img(src="images/images/telegram.webp", alt="")
+            .footer__bottom-contact 
+                h5.footer__bottom-title CONTACT
+                ul
+                - var num = ['(302) 555-0107', '(239) 555-0108' , 'laperle.com']
+                each item in num 
+                    li: a.footer__bottom-text(href="")= item  
+            .footer__location 
+                h5.footer__bottom-title LOCATION
+                p.footer__bottom-text 1901 Thornridge Cir. Shiloh,Hawaii 81063
+        .footer__map 
+            img(src="images/images/map.webp", alt="")    
+
+

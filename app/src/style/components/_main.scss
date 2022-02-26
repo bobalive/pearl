@@ -1,0 +1,100 @@
+.main{
+    &__about{
+        display: flex;
+        background: $gray;
+
+
+        &-content{
+            display: flex;
+            flex-direction: column;
+            text-align: start;
+            padding: 50px;
+            width: 50%;
+            height: 550px;
+          
+        }
+
+        &-img{
+            width: 50%;
+            height: 550px;
+            object-fit: cover;
+          
+        }
+        &-title{
+                font-size: 48px;
+                line-height: 55px;
+                font-family: $play-regular;
+                color: black;
+            }
+
+        &-text{
+            margin: 30px 0 50px;
+            font-size: 20px;
+            line-height: 45px;
+            color: black;
+            font-family: $play-regular;
+        }
+
+        &-link{
+            width: 300px;
+            padding: 13px 0;
+            text-align: center;
+            color: black;
+            border: 1px solid #000000;
+            font-size: 18px;
+            line-height: 24px;
+            font-family: $play-regular;
+        }
+    }
+
+    &__about:nth-of-type(2) div{
+        align-items: flex-end;
+    }
+    &__about:nth-of-type(2) div p{
+        text-align: end;
+    }
+
+
+    &__cards{
+
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows:1;
+    }
+    &__card{
+        grid-column: span 1;
+        grid-row: span 1;
+        position: relative;
+
+        &-img{
+            width: 100%;
+            height: 100%;
+        }
+
+
+        &-title , &-link{
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 50px;
+        }
+
+        &-title{
+            font-size: 43px;
+            line-height: 50px;
+            color: white;
+            font-family: $play-regular;
+            font-weight: 300;
+        }
+
+        &-link{
+            font-size: 48px;
+            line-height: 55px;
+            color: black;
+            font-family: $play-regular;
+            font-weight: 300;
+    
+        }
+
+    }
+}

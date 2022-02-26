@@ -18,7 +18,7 @@ import {reset} from './gulp/tasks/reset.js';
 import {style} from './gulp/tasks/style.js';
 import {images} from './gulp/tasks/images.js';
 import {js} from './gulp/tasks/js.js'
-import {fonts} from './gulp/tasks/fonts.js'
+import {ttfToWoff} from './gulp/tasks/fonts.js'
 // наблюдатель за изменениями в файлах
 function watcher(){
     gulp.watch(path.watch.html, html)
@@ -28,7 +28,7 @@ function watcher(){
 }
 
 // основные задачи
-const mainTask = gulp.series(fonts, gulp.parallel(html, style,images, js))
+const mainTask = gulp.series(ttfToWoff, gulp.parallel(html, style,images, js))
 
 
 // построение сценариев выполнения

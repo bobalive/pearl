@@ -1,0 +1,39 @@
+$gray:#F4EFEC;
+$white:#FFFFFF;
+$black:#4C4845;
+$play-italic :'PlayfairDisplay-Italic';
+$play-regular:'PlayfairDisplay-Regular';
+$play-scregular:'PlayfairDisplaySC-Regular';
+$times-roman:'times-new-roman';
+
+$fonts: ('PlayfairDisplay-Italic', 400),
+        ('PlayfairDisplay-Regular', 400),
+        ('PlayfairDisplaySC-Regular', 400),
+        ('times-new-roman', 400);
+
+@each $name, $weight in $fonts{
+    @font-face{
+        font-family:$name;
+        src: url('../fonts/#{$name}.woff');
+        font-weight: 400;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.higlighted{
+    color: #B38934;
+    font-size: 20px;
+    line-height: 100%;
+    font-family: $times-roman;
+}
+.underlined{
+    color: black;
+    text-decoration: underline;
+}
