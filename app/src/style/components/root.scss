@@ -15,7 +15,7 @@ $fonts: ('PlayfairDisplay-Italic', 400),
     @font-face{
         font-family:$name;
         src: url('../fonts/#{$name}.woff');
-        font-weight: 400;
+        font-weight: normal;
     }
 }
 
